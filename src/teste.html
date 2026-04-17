@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Plena - Residencial Sénior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sunlight': '#FFFDF0',
+                        'coral-vibrant': '#FF6B6B',
+                        'mint': '#4ECDC4',
+                        'golden': '#FFD93D',
+                        'slate-dark': '#2D3436',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap');
+        body { font-family: 'Outfit', sans-serif; }
+    </style>
+</head>
+<body class="bg-sunlight text-slate-dark">
+
+    <header class="p-5">
+        <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-md p-4 flex justify-between items-center border-b-4 border-golden">
+            <h1 class="text-2xl font-800 text-coral-vibrant tracking-tight">Vida<span class="text-mint">Plena</span></h1>
+            <nav class="hidden md:flex space-x-8 font-semibold">
+                <a href="#" class="hover:text-coral-vibrant transition">O Residencial</a>
+                <a href="#" class="hover:text-coral-vibrant transition">Atividades</a>
+                <a href="#" class="hover:text-coral-vibrant transition">Contato</a>
+            </nav>
+            <button class="bg-coral-vibrant text-white px-6 py-2 rounded-2xl font-bold hover:scale-105 transition-transform shadow-lg">Visite-nos</button>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+            <span class="bg-mint bg-opacity-20 text-mint px-4 py-1 rounded-full font-bold uppercase text-sm tracking-wider">Bem-estar total</span>
+            <h2 class="text-6xl font-extrabold text-slate-dark leading-tight">Um lugar para <span class="text-coral-vibrant">brilhar</span> em qualquer idade.</h2>
+            <p class="text-xl text-gray-600 leading-relaxed">Criamos um ambiente dinâmico, colorido e seguro para quem não abre mão de viver grandes momentos todos os dias.</p>
+            <div class="flex gap-4">
+                <div class="flex -space-x-3">
+                    <div class="w-12 h-12 rounded-full border-4 border-white bg-golden flex items-center justify-center text-xl">🌞</div>
+                    <div class="w-12 h-12 rounded-full border-4 border-white bg-mint flex items-center justify-center text-xl">🌿</div>
+                    <div class="w-12 h-12 rounded-full border-4 border-white bg-coral-vibrant flex items-center justify-center text-xl">🎨</div>
+                </div>
+                <p class="text-sm font-semibold flex items-center italic">+ de 20 atividades semanais!</p>
+            </div>
+        </div>
+
+        <div class="relative">
+            <div class="absolute -top-4 -right-4 w-24 h-24 bg-golden rounded-full mix-blend-multiply opacity-70 animate-pulse"></div>
+            <div class="bg-white p-4 rounded-[40px] shadow-2xl rotate-3 border-2 border-mint">
+                <div class="aspect-square bg-gradient-to-br from-yellow-100 to-orange-100 rounded-[32px] flex flex-col items-center justify-center text-center p-10">
+                    <span class="text-7xl mb-4">🤸‍♂️</span>
+                    <p class="font-bold text-2xl text-slate-dark">Imagine aqui:</p>
+                    <p class="text-gray-600">Uma foto bem iluminada de idosos fazendo yoga ou dançando em um jardim ensolarado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
